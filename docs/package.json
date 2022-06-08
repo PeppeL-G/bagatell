@@ -1,0 +1,19 @@
+{
+  "name": "bagatell-docs",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@bagatell/core": "^0.0.2",
+    "@bagatell/web-components": "^0.0.2",
+    "@bagatell/editor": "^0.0.2",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.45",
+    "vuepress": "^2.0.0-beta.45"
+  }
+}

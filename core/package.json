@@ -1,0 +1,11 @@
+{
+  "name": "@bagatell/core",
+  "version": "0.0.3",
+  "description": "Contains the core functionally for creating Bagatell apps.",
+  "main": "src/index.js",
+  "keywords": [
+    "bagatell"
+  ],
+  "author": "Peter Larsson-Green",
+  "license": "ISC"
+}

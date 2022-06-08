@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  docs:
+    build:
+      context: ./
+      dockerfile: ./docs/Dockerfile
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    volumes:
+      - "./docs/src:/app/src"
+      - "./core/src:/core/src"
+      - "./web-components/src:/web-components/src"
+      - "./editor/src:/editor/src"
+  editor:
+    build:
+      context: ./
+      dockerfile: ./editor/Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./editor/src:/app/src"
+      - "./core/src:/core/src"
+      - "./web-components/src:/web-components/src"

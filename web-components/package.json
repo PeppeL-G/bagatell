@@ -1,0 +1,14 @@
+{
+  "name": "@bagatell/web-components",
+  "version": "0.0.3",
+  "description": "Contains web components to visualize Bagatell apps.",
+  "main": "src/index.js",
+  "dependencies": {
+    "@bagatell/core": "^0.0.3"
+  },
+  "keywords": [
+    "bagatell"
+  ],
+  "author": "Peter Larsson-Green",
+  "license": "ISC"
+}

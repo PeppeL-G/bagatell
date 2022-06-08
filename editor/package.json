@@ -1,0 +1,28 @@
+{
+  "name": "@bagatell/editor",
+  "version": "0.0.4",
+  "description": "Contains a Vue component functioning as a GUI editor for Bagatell apps.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@bagatell/core": "^0.0.3",
+    "@bagatell/web-components": "^0.0.3",
+    "@codemirror/basic-setup": "^0.18.2",
+    "@codemirror/commands": "^0.18.0",
+    "@codemirror/lang-javascript": "^0.18.0",
+    "@codemirror/state": "^0.18.3",
+    "@codemirror/view": "^0.18.3",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.10.2",
+    "@vue/compiler-sfc": "^3.0.5",
+    "vite": "^2.9.9"
+  },
+  "main": "src/lib-index.js",
+  "files": [
+    "dist"
+  ]
+}

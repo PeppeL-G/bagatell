@@ -6,21 +6,21 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
-	
 	createStartPage(){
-		return new MyPage()
+		return new StartPage()
 	}
-	
 }
+//#endregion MyApp
 
-class MyPage extends Page{
+//#region StartPage
+class StartPage extends Page{
 	createGui(){
-		return (
-Image(`https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/800px-SNice.svg.png`)
-		)
+		return Image(`https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/800px-SNice.svg.png`)
 	}
 }
+//#endregion StartPage
 
 return MyApp
 

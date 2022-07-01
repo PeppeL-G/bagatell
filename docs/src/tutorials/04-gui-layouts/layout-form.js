@@ -11,29 +11,29 @@ import {
 
 export default function createApp({a, p}){
 
+//region MyApp
 class MyApp extends App{
-	
 	createStartPage(){
 		return new StartPage()
 	}
-	
 }
+//endregion MyApp
 
+//region StartPage
 class StartPage extends Page{
 	createGui(){
-		return Rows(
+		return Rows.padding(5)(
 			Space,
 			Text(`Login`),
 			Space,
 			Cols(
-				Text(`Username`),
-				Space,
-				EnterText.size(10),
+				Text(`Username:`).size(1),
+				EnterText.size(1),
 			),
+			Space.size(0.1),
 			Cols(
-				Text(`Password`),
-				Space,
-				EnterText.size(10),
+				Text(`Password:`).size(1),
+				EnterText.size(1),
 			),
 			Space,
 			Cols(
@@ -45,6 +45,7 @@ class StartPage extends Page{
 		)
 	}
 }
+//endregion StartPage
 
 return MyApp
 

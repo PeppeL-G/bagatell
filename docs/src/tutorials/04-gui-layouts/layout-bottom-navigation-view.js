@@ -10,19 +10,20 @@ import {
 
 export default function createApp({a, p}){
 
+//region MyApp
 class MyApp extends App{
-	
 	createStartPage(){
 		return new StartPage()
 	}
-	
 }
+//endregion MyApp
 
+//region StartPage
 class StartPage extends Page{
 	createGui(){
 		return Rows(
 			Text.size(1).background(`white`)(`Main content`),
-			Cols.backgroun(`lime`)(
+			Cols.background(`lime`)(
 				Space,
 				Button(`Option 1`),
 				Space,
@@ -34,6 +35,7 @@ class StartPage extends Page{
 		)
 	}
 }
+//endregion StartPage
 
 return MyApp
 

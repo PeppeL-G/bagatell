@@ -6,21 +6,21 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
-	
 	createStartPage(){
-		return new MyPage()
+		return new StartPage()
 	}
-	
 }
+//#endregion MyApp
 
-class MyPage extends Page{
+//#region StartPage
+class StartPage extends Page{
 	createGui(){
-		return (
-Slider(4).min(1).max(5)
-		)
+		return Slider(4).min(1).max(5)
 	}
 }
+//#endregion StartPage
 
 return MyApp
 

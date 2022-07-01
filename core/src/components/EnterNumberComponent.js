@@ -1,7 +1,7 @@
-import {Component} from '../Component'
-import {Direction} from '../classes/Direction'
-import {getNumericDirections} from '../functions/get-numeric-directions'
-import {EarInputListener} from '../classes/EarInputListener'
+import {Component} from '../Component.js'
+import {Direction} from '../classes/Direction.js'
+import {getNumericDirections} from '../functions/get-numeric-directions.js'
+import {EarInputListener} from '../classes/EarInputListener.js'
 
 export class EnterNumberComponent extends Component{
 	

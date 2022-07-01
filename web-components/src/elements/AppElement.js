@@ -1,7 +1,7 @@
-import {Listener} from '../classes/Listener'
-import {Talker} from '../classes/Talker'
-import {settings} from '../settings'
-import {PageElement} from './PageElement'
+import {Listener} from '../classes/Listener.js'
+import {Talker} from '../classes/Talker.js'
+import {settings} from '../settings.js'
+import {PageElement} from './PageElement.js'
 
 export class AppElement extends HTMLElement{
 	

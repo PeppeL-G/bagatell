@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import getClassName from '../functions/get-class-name'
+import getClassName from '../functions/get-class-name.js'
 
 export default {
 	props: {

@@ -1,6 +1,6 @@
-import {settings} from '../../settings'
-import {applyAttributesToElement} from '../../functions/apply-props-to-element'
-import {createGuiElement} from '../../functions/create-gui-element'
+import {settings} from '../../settings.js'
+import {applyAttributesToElement} from '../../functions/apply-props-to-element.js'
+import {createGuiElement} from '../../functions/create-gui-element.js'
 
 export default class LayersElement extends HTMLElement{
 	

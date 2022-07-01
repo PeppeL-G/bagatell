@@ -68,7 +68,7 @@ import Modal from './Modal.vue'
 import Folder from './Folder.vue'
 import EditFolder from './EditFolder.vue'
 import EditApp from './EditApp.vue'
-import getClassName from '../functions/get-class-name'
+import getClassName from '../functions/get-class-name.js'
 
 export default {
 	components: {

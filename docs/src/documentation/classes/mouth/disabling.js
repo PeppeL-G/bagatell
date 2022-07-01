@@ -8,14 +8,15 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
-	
 	createStartPage(){
 		return new QuietPage()
 	}
-	
 }
+//#endregion MyApp
 
+//#region QuietPage
 class QuietPage extends Page{
 	createGui(){
 		return Rows(
@@ -24,10 +25,12 @@ class QuietPage extends Page{
 		)
 	}
 }
+//#endregion QuietPage
 
+//#region SpeakingPage
 class SpeakingPage extends Page{
 	onBefore(){
-		this.mouth.enable()
+		a.mouth.enable()
 	}
 	createGui(){
 		return Rows(
@@ -36,9 +39,10 @@ class SpeakingPage extends Page{
 		)
 	}
 	onAfter(){
-		this.mouth.disable()
+		a.mouth.disable()
 	}
 }
+//#endregion SpeakingPage
 
 return MyApp
 

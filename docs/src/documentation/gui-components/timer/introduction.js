@@ -6,25 +6,23 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
-	
 	createStartPage(){
-		return new TimerPage()
+		return new StartPage()
 	}
-	
 }
+//#endregion MyApp
 
-class TimerPage extends Page{
-	
+//#region StartPage
+class StartPage extends Page{
 	createGui(){
-		return (
-			// We have not specified which the next page is, so
-			// this page will be reloaded when the timer times out.
-Timer.seconds(10)
-		)
+		// We have not specified which the next page is, so
+		// this page will be reloaded when the timer times out.
+		return Timer.seconds(10)
 	}
-	
 }
+//#endregion StartPage
 
 return MyApp
 

@@ -1,5 +1,5 @@
-import evalExpression from "./eval-expression"
-import getClassName from "./get-class-name"
+import evalExpression from "./eval-expression.js"
+import getClassName from "./get-class-name.js"
 
 // The generated code will look like this:
 const a = `

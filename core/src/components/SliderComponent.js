@@ -1,6 +1,6 @@
-import {Component} from '../Component'
-import {Direction} from '../classes/Direction'
-import {getNumericDirections} from '../functions/get-numeric-directions'
+import {Component} from '../Component.js'
+import {Direction} from '../classes/Direction.js'
+import {getNumericDirections} from '../functions/get-numeric-directions.js'
 
 export class SliderComponent extends Component{
 	

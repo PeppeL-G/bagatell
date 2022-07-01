@@ -6,21 +6,21 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
-	
 	createStartPage(){
-		return new MyPage()
+		return new StartPage()
 	}
-	
 }
+//#endregion MyApp
 
-class MyPage extends Page{
+//#region StartPage
+class StartPage extends Page{
 	createGui(){
-		return (
-Button(`Click me!`)
-		)
+		return Button(`Click me!`)
 	}
 }
+// #endregion StartPage
 
 return MyApp
 

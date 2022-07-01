@@ -18,14 +18,4 @@ export default defineConfig({
     },
   },
   */
-  build: {
-    lib: {
-      entry: path.resolve(__dirname, 'src', 'lib-index.js'),
-      formats: ['es'],
-      fileName: 'bagatell-editor-app.js',
-    },
-    rollupOptions: {
-      external: ['vue'],
-    },
-  },
 })

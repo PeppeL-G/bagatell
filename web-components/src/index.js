@@ -1,1 +1,1 @@
-export { AppElement } from './elements/AppElement'
+export { AppElement } from './elements/AppElement.js'

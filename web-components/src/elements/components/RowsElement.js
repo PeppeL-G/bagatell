@@ -1,7 +1,7 @@
-import {settings} from '../../settings'
-import {applyAttributesToElement} from '../../functions/apply-props-to-element'
-import {createGuiElement} from '../../functions/create-gui-element'
-import { SpaceComponent } from '@bagatell/core/src/components/SpaceComponent'
+import {settings} from '../../settings.js'
+import {applyAttributesToElement} from '../../functions/apply-props-to-element.js'
+import {createGuiElement} from '../../functions/create-gui-element.js'
+import { SpaceComponent } from '@bagatell/core/src/components/SpaceComponent.js'
 
 export default class RowsElement extends HTMLElement{
 	

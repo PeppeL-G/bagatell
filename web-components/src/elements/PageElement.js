@@ -1,5 +1,5 @@
-import {settings} from '../settings'
-import {createGuiElement} from '../functions/create-gui-element'
+import {settings} from '../settings.js'
+import {createGuiElement} from '../functions/create-gui-element.js'
 
 export class PageElement extends HTMLElement{
 	

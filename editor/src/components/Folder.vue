@@ -99,9 +99,9 @@ import DisabledAppComponent from './DisabledAppComponent.vue'
 import EditPageWrapper from './EditPageWrapper.vue'
 import SelectPageTemplate from './SelectPageTemplate.vue'
 import Modal from './Modal.vue'
-import pageWrapperToAppCreator from '../functions/page-wrapper-to-app-creator'
+import pageWrapperToAppCreator from '../functions/page-wrapper-to-app-creator.js'
 import { createFrameworkApp } from '@bagatell/core'
-import getClassName from '../functions/get-class-name'
+import getClassName from '../functions/get-class-name.js'
 
 export default {
 	components: {

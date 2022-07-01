@@ -11,29 +11,29 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
-	
 	createStartPage(){
-		return new MyPage()
+		return new StartPage()
 	}
-	
 }
+//#endregion MyApp
 
-class MyPage extends Page{
+//#region StartPage
+class StartPage extends Page{
 	createGui(){
-		return (
-Rows(
-	Space,
-	Text(`What's your IQ?`),
-	Space,
-	Cols(
-		EnterNumber.size(1).placeholder(`Enter IQ...`),
-		Button(`⇒`),
-	),
-)
+		return Rows(
+			Space,
+			Text(`What's your IQ?`),
+			Space,
+			Cols(
+				EnterNumber.size(1).placeholder(`Enter IQ...`),
+				Button(`⇒`),
+			),
 		)
 	}
 }
+//#endregion StartPage
 
 return MyApp
 

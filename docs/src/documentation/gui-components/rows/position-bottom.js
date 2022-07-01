@@ -8,26 +8,26 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
-	
 	createStartPage(){
-		return new MyPage()
+		return new StartPage()
 	}
-	
 }
+//#endregion MyApp
 
-class MyPage extends Page{
+//#region StartPage
+class StartPage extends Page{
 	createGui(){
-		return (
-Rows.background(`yellow`)(
-	Space,
-	Text(`Row 1`).background(`lime`),
-	Text(`Row 2`).background(`aqua`),
-	Text(`Row 3`).background(`gold`),
-)
+		return Rows.background(`yellow`)(
+			Space,
+			Text(`Row 1`).background(`lime`),
+			Text(`Row 2`).background(`aqua`),
+			Text(`Row 3`).background(`gold`),
 		)
 	}
 }
+//#endregion StartPage
 
 return MyApp
 

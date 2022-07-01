@@ -8,22 +8,23 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
-	
 	createStartPage(){
 		return new StartPage()
 	}
-	
 }
+//#endregion MyApp
 
+//#region StartPage
 class StartPage extends Page{
 	createGui(){
-		return (
-Button(`Go there`).page(DestinationPage)
-		)
+		return Button(`Go there`).page(DestinationPage)
 	}
 }
+//#endregion StartPage
 
+//#region DestinationPage
 class DestinationPage extends Page{
 	createGui(){
 		return Rows(
@@ -32,6 +33,7 @@ class DestinationPage extends Page{
 		)
 	}
 }
+//#endregion DestinationPage
 
 return MyApp
 

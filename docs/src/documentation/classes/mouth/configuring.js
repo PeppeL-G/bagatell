@@ -10,20 +10,21 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
-	
 	createStartPage(){
-		return new ConfiguringPage()
+		return new ConfigureVoicePage()
 	}
-	
 }
+//#endregion MyApp
 
-class ConfiguringPage extends Page{
+//#region ConfigureVoicePage
+class ConfigureVoicePage extends Page{
 	createGui(){
 		
 		const voiceButtons = a.mouth.getVoices().map(v =>
 			Button(v.name)
-				.page(TestPage)
+				.page(TestVoicePage)
 				.handler(() => a.mouth.selectVoice(v))
 		)
 		
@@ -41,26 +42,29 @@ class ConfiguringPage extends Page{
 			Space,
 			Text(`Select voice.`),
 			Space,
-			...voiceButtons,
+			voiceButtons,
 			Space,
 		)
 	}
 }
+//#endregion ConfigureVoicePage
 
-class TestPage extends Page{
+//#region TestVoicePage
+class TestVoicePage extends Page{
 	onBefore(){
 		a.mouth.enable()
 	}
 	createGui(){
 		return Rows(
 			Text(`This is what I sound like.`),
-			Button(`Back to ConfiguringPage`).page(ConfiguringPage),
+			Button(`Back to ConfiguringPage`).page(ConfigureVoicePage),
 		)
 	}
 	onAfter(){
 		a.mouth.disable()
 	}
 }
+//#endregion TestVoicePage
 
 return MyApp
 

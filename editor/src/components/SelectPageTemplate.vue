@@ -65,7 +65,7 @@
 import DisabledAppComponent from './DisabledAppComponent.vue'
 import EditPageTemplate from './EditPageTemplate.vue'
 import Modal from './Modal.vue'
-import projectToAppCreator from '../functions/project-to-app-creator'
+import projectToAppCreator from '../functions/project-to-app-creator.js'
 import { createFrameworkApp } from '@bagatell/core'
 
 export default {

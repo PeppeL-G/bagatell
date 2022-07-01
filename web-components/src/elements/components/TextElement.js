@@ -1,5 +1,5 @@
-import {settings} from '../../settings'
-import {applyAttributesToElement} from '../../functions/apply-props-to-element'
+import {settings} from '../../settings.js'
+import {applyAttributesToElement} from '../../functions/apply-props-to-element.js'
 
 export default class TextElement extends HTMLElement{
 	

@@ -1,0 +1,1 @@
+import{_ as t,c as o,d as r,r as a,o as n}from"./app.8a9cc80e.js";const x=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"editor/index.md"}'),s={name:"editor/index.md"};function d(c,i,p,_,m,l){const e=a("Editor");return n(),o("div",null,[r(e)])}var u=t(s,[["render",d]]);export{x as __pageData,u as default};

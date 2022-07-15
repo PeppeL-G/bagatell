@@ -1,0 +1,1 @@
+import{A as r,P as s,h as n}from"../app.8a9cc80e.js";function o({a:p,p:c}){class e extends r{createStartPage(){return new a}}class a extends s{createGui(){return n.seconds(10)}}return e}export{o as default};

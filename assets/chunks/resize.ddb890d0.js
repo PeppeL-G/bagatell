@@ -1,0 +1,1 @@
+import{A as r,P as p,I as s}from"../app.8a9cc80e.js";function g({a:i,p:n}){class e extends r{createStartPage(){return new a}}class a extends p{createGui(){return s("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/800px-SNice.svg.png").padding(20).background("lime")}}return e}export{g as default};

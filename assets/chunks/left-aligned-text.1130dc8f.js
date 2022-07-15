@@ -1,0 +1,1 @@
+import{A as r,P as s,T as n}from"../app.8a9cc80e.js";function i({a:p,p:c}){class e extends r{createStartPage(){return new t}}class t extends s{createGui(){return n("This text is not centered, but left aligned!").left()}}return e}export{i as default};

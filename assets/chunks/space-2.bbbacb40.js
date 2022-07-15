@@ -1,0 +1,1 @@
+import{A as s,P as n,R as c,S as e,T as l}from"../app.8a9cc80e.js";function d({a:p,p:u}){class a extends s{createStartPage(){return new t}}class t extends n{createGui(){return c.background("yellow")(e,l.background("lime")("I'm just as tall as the text, and I'm vertically centered!"),e)}}return a}export{d as default};

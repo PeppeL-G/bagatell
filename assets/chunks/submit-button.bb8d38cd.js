@@ -1,0 +1,1 @@
+import{A as s,P as n,R as p,S as e,T as o,C as u,g as c,B as l}from"../app.8a9cc80e.js";function x({a:d,p:g}){class a extends s{createStartPage(){return new t}}class t extends n{createGui(){return p(e,o("What's your IQ?"),e,u(c.size(1).placeholder("Enter IQ..."),l("\u21D2")))}}return a}export{x as default};

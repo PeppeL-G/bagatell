@@ -1,0 +1,1 @@
+import{A as n,P as a,B as p,h as u}from"../app.8a9cc80e.js";function d({a:c,p:i}){class r extends n{createStartPage(){return new e}}class e extends a{createGui(){return p("Start timer").page(s)}}class s extends a{createGui(){return u.seconds(3).page(e).handler(()=>alert("Timeout!"))}}return r}export{d as default};

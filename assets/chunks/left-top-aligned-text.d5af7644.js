@@ -1,0 +1,1 @@
+import{A as r,P as s,T as p}from"../app.8a9cc80e.js";function l({a:n,p:c}){class e extends r{createStartPage(){return new t}}class t extends s{createGui(){return p("This text is left and top aligned!").left().top()}}return e}export{l as default};

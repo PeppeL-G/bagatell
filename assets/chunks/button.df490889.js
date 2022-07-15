@@ -1,0 +1,1 @@
+import{A as c,P as t,B as n,T as p}from"../app.8a9cc80e.js";function o({a:u,p:i}){class a extends c{createStartPage(){return new r}}class r extends t{createGui(){return n("Click me!").page(s)}}class s extends t{createGui(){return p("You clicked me!")}}return a}export{o as default};

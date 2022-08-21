@@ -1,0 +1,1 @@
+import{A as r,P as n,E as p}from"../app.7b4e1434.js";function l({a:s,p:c}){class e extends r{createStartPage(){return new t}}class t extends n{createGui(){return p.placeholder("Enter name")}}return e}export{l as default};

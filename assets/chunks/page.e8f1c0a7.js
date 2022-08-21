@@ -1,0 +1,1 @@
+import{A as o,P as a,B as r,R as p,T as c}from"../app.7b4e1434.js";function P({a:u,p:g}){class s extends o{createStartPage(){return new e}}class e extends a{createGui(){return r("Go there").page(n)}}class n extends a{createGui(){return p(c("Welcome to the DestinationPage!"),r("Back to StartPage").page(e))}}return s}export{P as default};

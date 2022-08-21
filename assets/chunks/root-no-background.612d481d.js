@@ -1,0 +1,1 @@
+import{A as r,P as s,T as o}from"../app.7b4e1434.js";function u({a:n,p:c}){class e extends r{createStartPage(){return new t}}class t extends s{createGui(){return o("This Text component doesn't have a background color, so who knows what space it occupies?")}}return e}export{u as default};

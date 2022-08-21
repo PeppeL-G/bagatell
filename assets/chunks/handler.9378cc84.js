@@ -1,0 +1,1 @@
+import{A as n,P as p,f as s}from"../app.7b4e1434.js";function o({a:u,p:c}){class e extends n{createStartPage(){return new r}}class r extends p{createGui(){return s.placeholder("Enter your IQ").handler(t=>alert(t))}}return e}export{o as default};

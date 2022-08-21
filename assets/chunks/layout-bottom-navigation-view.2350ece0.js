@@ -1,0 +1,1 @@
+import{A as r,P as o,R as p,T as c,C as i,S as e,B as t}from"../app.7b4e1434.js";function l({a:u,p:d}){class a extends r{createStartPage(){return new n}}class n extends o{createGui(){return p(c.size(1).background("white")("Main content"),i.background("lime")(e,t("Option 1"),e,t("Option 2"),e,t("Option 3"),e))}}return a}export{l as default};

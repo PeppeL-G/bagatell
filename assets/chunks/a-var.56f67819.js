@@ -1,0 +1,1 @@
+import{A as t,P as s,g as n}from"../app.7b4e1434.js";function u({a:p,p:c}){class e extends t{createStartPage(){return new a}}class a extends s{createGui(){return n.min(1).max(200).aVar("iq")}}return e}export{u as default};

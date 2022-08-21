@@ -1,0 +1,1 @@
+import{A as n,P as p,E as s}from"../app.7b4e1434.js";function d({a:c,p:l}){class e extends n{createStartPage(){return new t}}class t extends p{createGui(){return s.placeholder("Enter city").handler(r=>alert(r))}}return e}export{d as default};

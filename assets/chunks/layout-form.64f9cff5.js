@@ -1,0 +1,1 @@
+import{A as p,P as o,R as c,S as e,T as s,C as a,E as t,B as u}from"../app.7b4e1434.js";function x({a:d,p:g}){class r extends p{createStartPage(){return new n}}class n extends o{createGui(){return c.padding(5)(e,s("Login"),e,a(s("Username:").size(1),t.size(1)),e.size(.1),a(s("Password:").size(1),t.size(1)),e,a(e,u("Login"),e),e.size(5))}}return r}export{x as default};

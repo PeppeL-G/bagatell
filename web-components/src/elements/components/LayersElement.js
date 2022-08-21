@@ -2,7 +2,13 @@ import {settings} from '../../settings.js'
 import {applyAttributesToElement} from '../../functions/apply-props-to-element.js'
 import {createGuiElement} from '../../functions/create-gui-element.js'
 
-export default class LayersElement extends HTMLElement{
+const ParentElement = (
+	typeof HTMLElement == 'undefined' ?
+	Function :
+	HTMLElement
+)
+
+export default class LayersElement extends ParentElement{
 	
 	static tagName = settings.namespace+"layers"
 	
@@ -44,7 +50,9 @@ export default class LayersElement extends HTMLElement{
 	
 }
 
-customElements.define(
-	LayersElement.tagName,
-	LayersElement,
-)
+if(typeof customElements != "undefined"){
+	customElements.define(
+		LayersElement.tagName,
+		LayersElement,
+	)
+}

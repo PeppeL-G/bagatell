@@ -1,7 +1,13 @@
 import {settings} from '../settings.js'
 import {createGuiElement} from '../functions/create-gui-element.js'
 
-export class PageElement extends HTMLElement{
+const ParentElement = (
+	typeof HTMLElement == 'undefined' ?
+	Function :
+	HTMLElement
+)
+
+export class PageElement extends ParentElement{
 	
 	static tagName = settings.namespace+"page"
 	
@@ -25,7 +31,9 @@ export class PageElement extends HTMLElement{
 	
 }
 
-customElements.define(
-	PageElement.tagName,
-	PageElement,
-)
+if(typeof customElements != "undefined"){
+	customElements.define(
+		PageElement.tagName,
+		PageElement,
+	)
+}

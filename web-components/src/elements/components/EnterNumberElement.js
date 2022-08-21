@@ -1,7 +1,13 @@
 import {settings} from '../../settings.js'
 import {applyAttributesToElement} from '../../functions/apply-props-to-element.js'
 
-export default class EnterNumberElement extends HTMLElement{
+const ParentElement = (
+	typeof HTMLElement == 'undefined' ?
+	Function :
+	HTMLElement
+)
+
+export default class EnterNumberElement extends ParentElement{
 	
 	static tagName = settings.namespace+"enter-number"
 	
@@ -68,7 +74,9 @@ export default class EnterNumberElement extends HTMLElement{
 	
 }
 
-customElements.define(
-	EnterNumberElement.tagName,
-	EnterNumberElement,
-)
+if(typeof customElements != "undefined"){
+	customElements.define(
+		EnterNumberElement.tagName,
+		EnterNumberElement,
+	)
+}

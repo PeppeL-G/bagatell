@@ -1,7 +1,13 @@
 import {settings} from '../../settings.js'
 import {applyAttributesToElement} from '../../functions/apply-props-to-element.js'
 
-export default class TimerElement extends HTMLElement{
+const ParentElement = (
+	typeof HTMLElement == 'undefined' ?
+	Function :
+	HTMLElement
+)
+
+export default class TimerElement extends ParentElement{
 	
 	static tagName = settings.namespace+"timer"
 	
@@ -73,7 +79,9 @@ export default class TimerElement extends HTMLElement{
 	
 }
 
-customElements.define(
-	TimerElement.tagName,
-	TimerElement,
-)
+if(typeof customElements != "undefined"){
+	customElements.define(
+		TimerElement.tagName,
+		TimerElement,
+	)
+}

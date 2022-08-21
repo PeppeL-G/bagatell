@@ -52,7 +52,7 @@ To indicate which `Page` the user should come to when clicking on the `Button`, 
 
 :::::
 
-The value you pass to `page()` can be the same type of value you pass as the `page` argument in the [Direction](../../logic/classes/direction/) constructor. It's typically the name of the `Page` class the user should come to.
+The value you pass to `page()` can be the same type of value you pass as the `page` argument in the [Direction](../../classes/direction/) constructor. It's typically the name of the `Page` class the user should come to.
 
 
 

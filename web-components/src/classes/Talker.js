@@ -1,4 +1,8 @@
-const speechSynthesis = window.speechSynthesis
+// To support server-side rendering, we can't assume "window" exists.
+const speechSynthesis = (
+	typeof window != "undefined" &&
+	window.speechSynthesis
+)
 
 export class Talker{
 	

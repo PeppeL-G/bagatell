@@ -1,7 +1,13 @@
 import {settings} from '../../settings.js'
 import {applyAttributesToElement} from '../../functions/apply-props-to-element.js'
 
-export default class ButtonElement extends HTMLButtonElement{
+const ParentElement = (
+	typeof HTMLButtonElement == 'undefined' ?
+	Function :
+	HTMLButtonElement
+)
+
+export default class ButtonElement extends ParentElement{
 	
 	static tagName = settings.namespace+"button"
 	
@@ -43,10 +49,14 @@ export default class ButtonElement extends HTMLButtonElement{
 	
 }
 
-customElements.define(
-	ButtonElement.tagName,
-	ButtonElement,
-	{extends: 'button'}
-)
-
-document.createElement(ButtonElement.tagName)
+if(typeof customElements != "undefined"){
+	
+	customElements.define(
+		ButtonElement.tagName,
+		ButtonElement,
+		{extends: 'button'}
+	)
+		
+	document.createElement(ButtonElement.tagName)
+	
+}

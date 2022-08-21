@@ -3,4 +3,23 @@ This example shows how to create an app that functions as a book, where the user
 
 <ShowApp class-example-name="book" />
 
-@[code](App.js)
+:::: tabs
+::: tab MyApp
+<<< @/examples/book/App.js#MyApp
+:::
+::: tab CoverPage
+<<< @/examples/book/App.js#CoverPage
+:::
+::: tab Page1
+<<< @/examples/book/App.js#Page1
+:::
+::: tab Page2
+<<< @/examples/book/App.js#Page2
+:::
+::: tab Page3
+<<< @/examples/book/App.js#Page3
+:::
+::: tab Page4
+<<< @/examples/book/App.js#Page4
+:::
+::::

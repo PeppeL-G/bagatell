@@ -1,7 +1,13 @@
 import {settings} from '../../settings.js'
 import {applyAttributesToElement} from '../../functions/apply-props-to-element.js'
 
-export default class SliderElement extends HTMLElement{
+const ParentElement = (
+	typeof HTMLElement == 'undefined' ?
+	Function :
+	HTMLElement
+)
+
+export default class SliderElement extends ParentElement{
 	
 	static tagName = settings.namespace+"slider"
 	
@@ -87,7 +93,9 @@ export default class SliderElement extends HTMLElement{
 	
 }
 
-customElements.define(
-	SliderElement.tagName,
-	SliderElement,
-)
+if(typeof customElements != "undefined"){
+	customElements.define(
+		SliderElement.tagName,
+		SliderElement,
+	)
+}

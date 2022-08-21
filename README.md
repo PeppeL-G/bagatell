@@ -1,3 +1,6 @@
+# Quick links
+* [Documentation website](https://peppel-g.github.io/bagatell/)
+
 # Introduction
 This repository contains code related to the *Bagatell* framework. It consists of the following projects:
 

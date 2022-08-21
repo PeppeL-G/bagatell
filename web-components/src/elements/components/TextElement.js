@@ -1,7 +1,13 @@
 import {settings} from '../../settings.js'
 import {applyAttributesToElement} from '../../functions/apply-props-to-element.js'
 
-export default class TextElement extends HTMLElement{
+const ParentElement = (
+	typeof HTMLElement == 'undefined' ?
+	Function :
+	HTMLElement
+)
+
+export default class TextElement extends ParentElement{
 	
 	static tagName = settings.namespace+"text"
 	
@@ -66,7 +72,9 @@ export default class TextElement extends HTMLElement{
 	
 }
 
-customElements.define(
-	TextElement.tagName,
-	TextElement,
-)
+if(typeof customElements != "undefined"){
+	customElements.define(
+		TextElement.tagName,
+		TextElement,
+	)
+}

@@ -179,16 +179,16 @@ class MyPage extends Page{
 	onBefore(){
 	}
 	createGui(){
-		return <Rows>
-			<Space />
-			<Text>Is this a new template?</Text>
-			<Cols>
-				<Space />
-				<Button page={null}>No</Button>
-				<Button page={null}>Yes</Button>
-				<Space />
-			</Cols>
-		</Rows>
+		return Rows(
+			Space,
+			Text(\`Is this a new template?\`),
+			Cols(
+				Space,
+				Button(\`No\`).page(null),
+				Button(\`Yes\`).page(null),
+				Space,
+			)
+		)
 	}
 	onAfter(){
 	}

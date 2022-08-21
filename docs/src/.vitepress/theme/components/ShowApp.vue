@@ -22,15 +22,25 @@ export default {
 		let module
 		
 		if(this.classExampleName){
-			module = await import('../../../examples/'+this.classExampleName+"/App.js")
+			module = await import(
+				`../../../examples/${this.classExampleName}/App.js`
+			)
 		}else if(this.guiComponent && this.filename){
-			module = await import('../../../documentation/gui-components/'+this.guiComponent+'/'+this.filename+".js")
+			module = await import(
+				`../../../documentation/gui-components/${this.guiComponent}/${this.filename}.js`
+			)
 		}else if(this.tutorial && this.filename){
-			module = await import('../../../tutorials/'+this.tutorial+'/'+this.filename+".js")
+			module = await import(
+				`../../../tutorials/${this.tutorial}/${this.filename}.js`
+			)
 		}else if(this.logicClass && this.filename){
-			module = await import('../../../documentation/classes/'+this.logicClass+'/'+this.filename+".js")
+			module = await import(
+				`../../../documentation/classes/${this.logicClass}/${this.filename}.js`
+			)
 		}else if(this.variousAppName){
-			module = await import('../../../various-apps/'+this.variousAppName+".js")
+			module = await import(
+				`../../../various-apps/${this.variousAppName}.js`
+			)
 		}
 		
 		const createApp = module.default
@@ -50,10 +60,12 @@ export default {
 </script>
 
 <template>
-	<div
-		ref="appDiv"
-		class="app"
-	/>
+	<ClientOnly>
+		<div
+			ref="appDiv"
+			class="app"
+		/>
+	</ClientOnly>
 </template>
 
 <style scoped>

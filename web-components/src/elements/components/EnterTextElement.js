@@ -1,7 +1,13 @@
 import {settings} from '../../settings.js'
 import {applyAttributesToElement} from '../../functions/apply-props-to-element.js'
 
-export default class EnterTextElement extends HTMLElement{
+const ParentElement = (
+	typeof HTMLElement == 'undefined' ?
+	Function :
+	HTMLElement
+)
+
+export default class EnterTextElement extends ParentElement{
 	
 	static tagName = settings.namespace+"enter-text"
 	
@@ -67,7 +73,9 @@ export default class EnterTextElement extends HTMLElement{
 	
 }
 
-customElements.define(
-	EnterTextElement.tagName,
-	EnterTextElement,
-)
+if(typeof customElements != "undefined"){
+	customElements.define(
+		EnterTextElement.tagName,
+		EnterTextElement,
+	)
+}

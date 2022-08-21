@@ -1,6 +1,6 @@
 {
   "name": "@bagatell/core",
-  "version": "0.0.5",
+  "version": "1.0.1",
   "description": "Contains the core functionally for creating Bagatell apps.",
   "main": "src/index.js",
   "type": "module",

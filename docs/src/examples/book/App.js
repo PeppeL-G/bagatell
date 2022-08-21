@@ -10,34 +10,35 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
-	
 	createStartPage(){
 		return new CoverPage()
 	}
-	
 }
+//#endregion MyApp
 
+//#region CoverPage
 class CoverPage extends Page{
 	createGui(){
-		return (
-			Rows(
+		return Rows(
+			Space,
+			Text(`A short story`),
+			Text(`by Peppe L-G`),
+			Space,
+			Space,
+			Cols(
 				Space,
-				Text(`A short story`),
-				Text(`by Peppe L-G`),
+				Button(`Start Reading`).page(Page1),
 				Space,
-				Space,
-				Cols(
-					Space,
-					Button(`Start Reading`).page(Page1),
-					Space,
-				),
-				Space,
-			)
+			),
+			Space,
 		)
 	}
 }
+//#endregion CoverPage
 
+//#region Page1
 class Page1 extends Page{
 	createGui(){
 		return Rows(
@@ -53,7 +54,9 @@ class Page1 extends Page{
 		)
 	}
 }
+//#endregion Page1
 
+//#region Page2
 class Page2 extends Page{
 	createGui(){
 		return Rows(
@@ -69,7 +72,9 @@ class Page2 extends Page{
 		)
 	}
 }
+//#endregion Page2
 
+//#region Page3
 class Page3 extends Page{
 	createGui(){
 		return Rows(
@@ -85,7 +90,9 @@ class Page3 extends Page{
 		)
 	}
 }
+//#endregion Page3
 
+//#region Page4
 class Page4 extends Page{
 	createGui(){
 		return Rows(
@@ -102,6 +109,7 @@ class Page4 extends Page{
 		)
 	}
 }
+//#endregion Page4
 
 return MyApp
 

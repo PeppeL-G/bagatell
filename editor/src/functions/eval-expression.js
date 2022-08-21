@@ -15,7 +15,7 @@ import {
 	Cols,
 } from '@bagatell/core'
 
-const args = [
+const variables = {
 	App,
 	Button,
 	Cols,
@@ -30,11 +30,10 @@ const args = [
 	Space,
 	Text,
 	Timer,
-]
+}
 
-const parameters = args.map(
-	arg => arg.name
-)
+const parameters = Object.keys(variables)
+const args = parameters.map(p => variables[p])
 
 export default function evalExpression(jsExpressionAsString){
 	

@@ -11,6 +11,7 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
 	
 	onBefore(){
@@ -34,7 +35,9 @@ class MyApp extends App{
 	}
 	
 }
+//#endregion MyApp
 
+//#region AskUserToMakeAMove
 class AskUserToMakeAMove extends Page{
 	
 	createGui(){
@@ -92,7 +95,9 @@ class AskUserToMakeAMove extends Page{
 	}
 	
 }
+//#endregion AskUserToMakeAMove
 
+//#region ShowGameAfterUserMove
 class ShowGameAfterUserMove extends Page{
 	
 	createGui(){
@@ -111,7 +116,9 @@ class ShowGameAfterUserMove extends Page{
 	}
 	
 }
+//#endregion ShowGameAfterUserMove
 
+//#region AskComputerToMakeAMove
 class AskComputerToMakeAMove extends Page{
 	
 	onBefore(){
@@ -192,7 +199,9 @@ class AskComputerToMakeAMove extends Page{
 	}
 	
 }
+//#endregion AskComputerToMakeAMove
 
+//#region ComputerWon
 class ComputerWon extends Page{
 	createGui(){
 		return Rows(
@@ -202,7 +211,9 @@ class ComputerWon extends Page{
 		)
 	}
 }
+//#endregion ComputerWon
 
+//#region PlayerWon
 class PlayerWon extends Page{
 	createGui(){
 		return Rows(
@@ -212,6 +223,7 @@ class PlayerWon extends Page{
 		)
 	}
 }
+//#endregion PlayerWon
 
 return MyApp
 

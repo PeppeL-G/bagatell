@@ -1,12 +1,12 @@
 {
   "name": "@bagatell/web-components",
-  "version": "0.0.5",
+  "version": "1.0.1",
   "description": "Contains web components to visualize Bagatell apps.",
   "main": "src/index.js",
-  "dependencies": {
-    "@bagatell/core": "^0.0.5"
-  },
   "type": "module",
+  "dependencies": {
+    "@bagatell/core": "^1.0.1"
+  },
   "keywords": [
     "bagatell"
   ],

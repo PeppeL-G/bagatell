@@ -3,7 +3,13 @@ import {applyAttributesToElement} from '../../functions/apply-props-to-element.j
 import {createGuiElement} from '../../functions/create-gui-element.js'
 import { SpaceComponent } from '@bagatell/core/src/components/SpaceComponent.js'
 
-export default class RowsElement extends HTMLElement{
+const ParentElement = (
+	typeof HTMLElement == 'undefined' ?
+	Function :
+	HTMLElement
+)
+
+export default class RowsElement extends ParentElement{
 	
 	static tagName = settings.namespace+"rows"
 	
@@ -51,7 +57,9 @@ export default class RowsElement extends HTMLElement{
 	
 }
 
-customElements.define(
-	RowsElement.tagName,
-	RowsElement,
-)
+if(typeof customElements != "undefined"){
+	customElements.define(
+		RowsElement.tagName,
+		RowsElement,
+	)
+}

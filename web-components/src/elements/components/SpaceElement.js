@@ -2,7 +2,13 @@ import {settings} from '../../settings.js'
 import {applyAttributesToElement} from '../../functions/apply-props-to-element.js'
 import {createGuiElement} from '../../functions/create-gui-element.js'
 
-export default class SpaceElement extends HTMLElement{
+const ParentElement = (
+	typeof HTMLElement == 'undefined' ?
+	Function :
+	HTMLElement
+)
+
+export default class SpaceElement extends ParentElement{
 	
 	static tagName = settings.namespace+"space"
 	
@@ -41,7 +47,9 @@ export default class SpaceElement extends HTMLElement{
 	
 }
 
-customElements.define(
-	SpaceElement.tagName,
-	SpaceElement,
-)
+if(typeof customElements != "undefined"){
+	customElements.define(
+		SpaceElement.tagName,
+		SpaceElement,
+	)
+}

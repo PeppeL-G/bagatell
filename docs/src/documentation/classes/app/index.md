@@ -23,7 +23,7 @@ class MyApp extends App{
 :::
 
 ::: tip "a" is this!
-Read the [Getting started](../../#getting-started) to learn more about the special variable `a` you can use to refer to the instance of your `App` class.
+In the `App` class you can use the special variable named `a` to refer to the instance of your `App` class. That can be more convenient than using the special variable named `this`.
 :::
 
 

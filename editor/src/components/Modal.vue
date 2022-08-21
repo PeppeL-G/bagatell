@@ -1,6 +1,6 @@
 <template>
 	
-	<teleport to="#bagatell-editor">
+	<teleport to="#bagatell-editor-app">
 		
 		<div class="modal" @click="onClick">
 			

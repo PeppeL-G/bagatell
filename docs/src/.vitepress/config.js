@@ -22,11 +22,14 @@ export default defineConfig({
 			text: 'Examples',
 			link: '/examples/',
 		}, {
-			text: 'Web Components',
-			link: '/web-components/',
-		}, {
 			text: 'Editor',
 			link: '/editor/',
+		}, {
+			text: 'Implementation',
+			link: '/implementation/',
+		}, {
+			text: 'Contact',
+			link: '/contact/',
 		}],
 		sidebar: {
 			
@@ -140,6 +143,21 @@ export default defineConfig({
 					link: '/documentation/state-handling/',
 				}],
 			}],
+			
+			'/implementation/': [{
+				text: 'Implementation',
+				items: [{
+					text: '@bagatell/core',
+					link: '/implementation/core/'
+				}, {
+					text: '@bagatell/web-components',
+					link: '/implementation/web-components/'
+				}, {
+					text: '@bagatell/editor',
+					link: '/implementation/editor/'
+				}],
+			}],
+			
 		},
 	},
 })

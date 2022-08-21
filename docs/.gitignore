@@ -1,3 +1,4 @@
 node_modules
-src/.vuepress/.temp
-src/.vuepress/.cache
+src/.vitepress/.temp
+src/.vitepress/.cache
+src/.vitepress/dist

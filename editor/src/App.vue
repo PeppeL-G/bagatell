@@ -1,6 +1,6 @@
 <template>
 	
-	<div id="bagatell-editor" class="app">
+	<div id="bagatell-editor-app" class="app">
 		
 		<span
 			class="main-menu-icon"
@@ -364,10 +364,9 @@ class ClickFast extends Page{
 
 <style>
 
-/* #app is in index.html */
+/* Global styles; #app is in index.html. */
 html, body, #app{
 	height: 100%;
-	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
@@ -377,6 +376,7 @@ html, body, #app{
 <style scoped>
 
 .app{
+	box-sizing: border-box;
 	height: 100%;
 	all: initial;
 }

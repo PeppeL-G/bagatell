@@ -1,8 +1,11 @@
+// To support server-side rendering, we can't assume "window" exists.
 const SpeechRecognition = (
-	window.SpeechRecognition ||
-	window.webkitSpeechRecognition ||
-	window.mozSpeechRecognition ||
-	window.msSpeechRecognition
+	typeof window != "undefined" && (
+		window.SpeechRecognition ||
+		window.webkitSpeechRecognition ||
+		window.mozSpeechRecognition ||
+		window.msSpeechRecognition
+	)
 )
 
 export class Listener{

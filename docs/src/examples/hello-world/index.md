@@ -3,4 +3,11 @@ This example shows how to create the simplest possible *Hello, World!* app. The 
 
 <ShowApp class-example-name="hello-world" />
 
-@[code](App.js)
+:::: tabs
+::: tab MyApp
+<<< @/examples/hello-world/App.js#MyApp
+:::
+::: tab StartPage
+<<< @/examples/hello-world/App.js#StartPage
+:::
+::::

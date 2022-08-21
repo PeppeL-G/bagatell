@@ -3,7 +3,13 @@ import {Talker} from '../classes/Talker.js'
 import {settings} from '../settings.js'
 import {PageElement} from './PageElement.js'
 
-export class AppElement extends HTMLElement{
+const ParentElement = (
+	typeof HTMLElement == 'undefined' ?
+	Function :
+	HTMLElement
+)
+
+export class AppElement extends ParentElement{
 	
 	static tagName = settings.namespace+"app"
 	
@@ -115,7 +121,9 @@ export class AppElement extends HTMLElement{
 	
 }
 
-customElements.define(
-	AppElement.tagName,
-	AppElement,
-)
+if(typeof customElements != "undefined"){
+	customElements.define(
+		AppElement.tagName,
+		AppElement,
+	)
+}

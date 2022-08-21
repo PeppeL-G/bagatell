@@ -11,14 +11,15 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
-	
 	createStartPage(){
 		return new EnterGuess()
 	}
-	
 }
+//#endregion MyApp
 
+//#region EnterGuess
 class EnterGuess extends Page{
 	createGui(){
 		return Rows(
@@ -44,7 +45,9 @@ class EnterGuess extends Page{
 		)
 	}
 }
+//#endregion EnterGuess
 
+//#region CorrectGuess
 class CorrectGuess extends Page{
 	createGui(){
 		return Rows(
@@ -56,7 +59,9 @@ class CorrectGuess extends Page{
 		)
 	}
 }
+//#endregion CorrectGuess
 
+//#region NoGuessEntered
 class NoGuessEntered extends Page{
 	createGui(){
 		return Rows(
@@ -74,7 +79,9 @@ class NoGuessEntered extends Page{
 		)
 	}
 }
+//#endregion NoGuessEntered
 
+//#region InvalidGuess
 class InvalidGuess extends Page{
 	createGui(){
 		return Rows(
@@ -92,7 +99,9 @@ class InvalidGuess extends Page{
 		)
 	}
 }
+//#endregion InvalidGuess
 
+//#region WrongGuess
 class WrongGuess extends Page{
 	createGui(){
 		return Rows(
@@ -110,7 +119,9 @@ class WrongGuess extends Page{
 		)
 	}
 }
+//#endregion WrongGuess
 
+//#region GiveUp
 class GiveUp extends Page{
 	createGui(){
 		return Rows(
@@ -122,6 +133,7 @@ class GiveUp extends Page{
 		)
 	}
 }
+//#endregion GiveUp
 
 return MyApp
 

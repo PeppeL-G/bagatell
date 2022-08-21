@@ -1,21 +1,14 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
-  server: {
-      host: '0.0.0.0',
-  },
-  /*
-  */
-  /*
-  resolve: {
-    alias: {
-      '@bagatell/core': path.resolve(__dirname, '../core/src'),
-      '@bagatell/web-components': path.resolve(__dirname, '../web-components/src'),
-    },
-  },
-  */
+	plugins: [vue()],
+	server: {
+		host: '0.0.0.0',
+		port: 3000,
+		hmr: {
+			port: 3001,
+		},
+	},
 })

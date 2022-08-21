@@ -9,6 +9,7 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
 	
 	onBefore(){
@@ -32,9 +33,10 @@ class MyApp extends App{
 	}
 	
 }
+//#endregion MyApp
 
+//#region CounterPage
 class CounterPage extends Page{
-	
 	createGui(){
 		return Rows(
 			Text(`${a.counter}`).size(1),
@@ -47,8 +49,8 @@ class CounterPage extends Page{
 			),
 		)
 	}
-	
 }
+//#endregion CounterPage
 
 return MyApp
 

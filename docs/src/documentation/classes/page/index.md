@@ -24,7 +24,7 @@ class MyApp extends App{
 ::: tab StartPage
 ```js
 class StartPage extends Page{
-	// Override methods here to give this page
+	// Override methods here to give the StartPage
 	// the specific behavior you want it to have.
 }
 ```
@@ -32,7 +32,7 @@ class StartPage extends Page{
 ::: tab MenuPage
 ```js
 class MenuPage extends Page{
-	// Override methods here to give this page
+	// Override methods here to give the MenuPage
 	// the specific behavior you want it to have.
 }
 ```
@@ -40,7 +40,7 @@ class MenuPage extends Page{
 ::: tab GameOverPage
 ```js
 class GameOverPage extends Page{
-	// Override methods here to give this page
+	// Override methods here to give the GameOverPage
 	// the specific behavior you want it to have.
 }
 ```
@@ -48,8 +48,13 @@ class GameOverPage extends Page{
 ::::
 :::::
 
+
 ::: tip "p" is this!
-Read the [Getting started](../../#getting-started) to learn more about the special variable `p` you can use to refer to the instance of your current `Page` class.
+In the `Page` class you can use the special variable named `p` to refer to the instance of your `Page` class. That can be more convenient than using the special variable named `this`.
+:::
+
+::: tip The "a" variable
+In the `Page` class you can use the special variable named `a` to refer to the instance of your `App` class.
 :::
 
 
@@ -64,7 +69,7 @@ Example of how to use `Page.onBefore()`.
 ```js
 class AskQuestionPage extends Page{
 	onBefore(){
-		this.startTimeInMs = Date.now()
+		p.startTimeInMs = Date.now()
 	}
 }
 ```
@@ -85,7 +90,7 @@ Example showing how to use `Page.createGui()`.
 ```js
 class AskQuestionPage extends Page{
 	onBefore(){
-		this.startTimeInMs = Date.now()
+		p.startTimeInMs = Date.now()
 	}
 	createGui(){
 		return Rows(
@@ -119,7 +124,7 @@ Example showing how to use `Page.onAfter()`.
 ```js
 class AskQuestionPage extends Page{
 	onBefore(){
-		this.startTimeInMs = Date.now()
+		p.startTimeInMs = Date.now()
 	}
 	createGui(){
 		return Rows(
@@ -167,7 +172,7 @@ Example showing how to use `Page.createAfterDirections()`.
 ```js
 class AskQuestionPage extends Page{
 	onBefore(){
-		this.startTimeInMs = Date.now()
+		p.startTimeInMs = Date.now()
 	}
 	createGui(){
 		return Rows(

@@ -4,16 +4,19 @@
   "description": "",
   "scripts": {
     "dev": "vitepress dev src",
-    "build": "vitepress build src"
+    "build": "vitepress build src",
+    "serve": "vitepress serve src",
+    "deploy": "node scripts/deploy.js"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bagatell/core": "^0.0.5",
-    "@bagatell/editor": "^0.0.10",
-    "@bagatell/web-components": "^0.0.5",
+    "@bagatell/core": "^1.0.1",
+    "@bagatell/editor": "^1.0.1",
+    "@bagatell/web-components": "^1.0.1",
     "markdown-it-container": "^3.0.0",
-    "vitepress": "^1.0.0-alpha.4"
+    "vitepress": "^1.0.0-alpha.9"
   }
 }

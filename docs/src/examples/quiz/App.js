@@ -11,6 +11,7 @@ import {
 
 export default function createApp({a, p}){
 
+//#region MyApp
 class MyApp extends App{
 	
 	onBefore(){
@@ -31,8 +32,15 @@ class MyApp extends App{
 		a.numberOfAnsweredQuestions += 1
 	}
 	
+	reset(){
+		a.numberOfAnsweredQuestions = 0
+		a.numberOfCorrectAnswers = 0
+	}
+	
 }
+//#endregion MyApp
 
+//#region Question1
 class Question1 extends Page{
 	
 	createGui(){
@@ -70,7 +78,9 @@ class Question1 extends Page{
 	}
 	
 }
+//#endregion Question1
 
+//#region Question2
 class Question2 extends Page{
 	
 	createGui(){
@@ -108,7 +118,9 @@ class Question2 extends Page{
 	}
 	
 }
+//#endregion Question2
 
+//#region Question3
 class Question3 extends Page{
 	
 	createGui(){
@@ -146,7 +158,9 @@ class Question3 extends Page{
 	}
 	
 }
+//#endregion Question3
 
+//#region Result
 class Result extends Page{
 	
 	createGui(){
@@ -167,19 +181,15 @@ class Result extends Page{
 			
 			Cols(
 				Space,
-				Button(`Try again`).page(Question1).handler(p.reset),
+				Button(`Try again`).page(Question1).handler(a.reset),
 				Space,
 			),
 			
 		)
 	}
 	
-	reset(){
-		a.numberOfAnsweredQuestions = 0
-		a.numberOfCorrectAnswers = 0
-	}
-	
 }
+//#endregion Result
 
 return MyApp
 

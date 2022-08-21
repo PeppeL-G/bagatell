@@ -3,4 +3,11 @@ This example shows how to create an app with a counter.
 
 <ShowApp class-example-name="counter" />
 
-@[code](App.js)
+:::: tabs
+::: tab MyApp
+<<< @/examples/counter/App.js#MyApp
+:::
+::: tab CounterPage
+<<< @/examples/counter/App.js#CounterPage
+:::
+::::

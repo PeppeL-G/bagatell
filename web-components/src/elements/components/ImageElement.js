@@ -1,7 +1,13 @@
 import {settings} from '../../settings.js'
 import {applyAttributesToElement} from '../../functions/apply-props-to-element.js'
 
-export default class ImageElement extends HTMLImageElement{
+const ParentElement = (
+	typeof HTMLImageElement == 'undefined' ?
+	Function :
+	HTMLImageElement
+)
+
+export default class ImageElement extends ParentElement{
 	
 	static tagName = settings.namespace+"image"
 	
@@ -35,10 +41,14 @@ export default class ImageElement extends HTMLImageElement{
 	
 }
 
-customElements.define(
-	ImageElement.tagName,
-	ImageElement,
-	{extends: 'img'}
-)
-
-document.createElement(ImageElement.tagName)
+if(typeof customElements != "undefined"){
+	
+	customElements.define(
+		ImageElement.tagName,
+		ImageElement,
+		{extends: 'img'}
+	)
+		
+	document.createElement(ImageElement.tagName)
+	
+}

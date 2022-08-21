@@ -62,14 +62,14 @@ To indicate which `Page` the user should come to when the `Timer` times out, use
 
 :::::
 
-The `page()` configuration method accepts the same type of values as the `page` parameter in the [Direction](../../logic/classes/direction/) constructor.
+The `page()` configuration method accepts the same type of values as the `page` parameter in the [Direction](../../classes/direction/) constructor.
 
 
 
 
 
 ## Handling timeouts
-Use the configuration methods `handler()` to specify a function that should be called when the timer times out.
+Use the configuration method `handler()` to specify a function that should be called when the timer times out.
 
 ::::: tip Example
 :::: tabs

@@ -6,6 +6,7 @@ import {
 
 export default function createApp({a, p}){
 
+//#region AllCode
 class MyApp extends App{
 	
 	createStartPage(){
@@ -21,6 +22,7 @@ class StartPage extends Page{
 	}
 	
 }
+//#endregion AllCode
 
 return MyApp
 
